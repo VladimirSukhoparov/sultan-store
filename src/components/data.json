@@ -1,0 +1,245 @@
+[
+   {
+      "image": "/images/aos.png",
+      "name": "Гель для душа",
+      "type": "volume",
+      "size": "450 мл",
+      "barcode": 4604049097540,
+      "manufacturer": "AOS",
+      "brand": "AOS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "38.76 ₸",
+      "typeOfCare": [
+         "body care",
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/sorti.png",
+      "name": "Крем для рук",
+      "type": "volume",
+      "size": "150 мл",
+      "barcode": 4604049097541,
+      "manufacturer": "SORTI",
+      "brand": "SORTI",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "108.76 ₸",
+      "typeOfCare": [
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/ariel.png",
+      "name": "Скраб",
+      "type": "volume",
+      "size": "590 мл",
+      "barcode": 4604049097542,
+      "manufacturer": "ARIEL",
+      "brand": "ARIEL",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "48.76 ₸",
+      "typeOfCare": [
+         "body care",
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/bimax.png",
+      "name": "Увлажняющий лосьон",
+      "type": "volume",
+      "size": "450 мл",
+      "barcode": 4604049097543,
+      "manufacturer": "BIMAX",
+      "brand": "BIMAX",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "43.76 ₸",
+      "typeOfCare": [
+         "body care",
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/biomio.png",
+      "name": "Молочко для тела",
+      "type": "volume",
+      "size": "490 г",
+      "barcode": 4604049097544,
+      "manufacturer": "БУЛГАРИ ГРИН",
+      "brand": "БУЛГАРИ ГРИН",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "43.76 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/bimax.png",
+      "name": "Крем для тела",
+      "type": "volume",
+      "size": "210 мл",
+      "barcode": 4604049097548,
+      "manufacturer": "GRIFON",
+      "brand": "GRIFON",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "40.76 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/biomio.png",
+      "name": "Биовоск для ногтей",
+      "type": "weight",
+      "size": "25 г",
+      "barcode": 4604049097549,
+      "manufacturer": "AOS",
+      "brand": "AOS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "28.76 ₸",
+      "typeOfCare": [
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/aos.png",
+      "name": "Мвска-перчатки для рук",
+      "type": "weight",
+      "size": "8 г",
+      "barcode": 4604049097550,
+      "manufacturer": "НЭФИС",
+      "brand": "НЭФИС",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "8.76 ₸",
+      "typeOfCare": [
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/sorti.png",
+      "name": "Крем для рук с экстрактом ромашки и эвкалипта",
+      "type": "volume",
+      "size": "150 мл",
+      "barcode": 4604049097551,
+      "manufacturer": "PACLAN",
+      "brand": "PACLAN",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "28.76 ₸",
+      "typeOfCare": [
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/ariel.png",
+      "name": "Скраб для тела",
+      "type": "volume",
+      "size": "500 мл",
+      "barcode": 4604049097552,
+      "manufacturer": "BOYSCOUT",
+      "brand": "BOYSCOUT",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "58.76 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/bimax.png",
+      "name": "Соль для ванн",
+      "type": "weight",
+      "size": "1000 г",
+      "barcode": 4604049097553,
+      "manufacturer": "ДОМАШНИЙ СУНДУК",
+      "brand": "ДОМАШНИЙ СУНДУК",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "13.32 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/biomio.png",
+      "name": "Гель для душа",
+      "type": "volume",
+      "size": "350 мл",
+      "barcode": 4604049097554,
+      "manufacturer": "GRIFON",
+      "brand": "GRIFON",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "28.44 ₸",
+      "typeOfCare": [
+         "body care",
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/aos.png",
+      "name": "Крем для рук",
+      "type": "volume",
+      "size": "250 мл",
+      "barcode": 4604049097555,
+      "manufacturer": "NIVEA",
+      "brand": "NIVEA",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "66.16 ₸",
+      "typeOfCare": [
+         "hand care"
+      ]
+   },
+   {
+      "image": "/images/sorti.png",
+      "name": "Бурлящий шар для ванны",
+      "type": "weight",
+      "size": "150 г",
+      "barcode": 4604049097556,
+      "manufacturer": "SORTI",
+      "brand": "SORTI",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "18.76 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/ariel.png",
+      "name": "Гель для душа, содержащий в своем составе Коэнзим Q10",
+      "type": "volume",
+      "size": "600 мл",
+      "barcode": 4604049097557,
+      "manufacturer": "ARIEL",
+      "brand": "ARIEL",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "108.26 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/bimax.png",
+      "name": "Лосьон для тела с Коэнзимом",
+      "type": "volume",
+      "size": "500 мл",
+      "barcode": 4604049097558,
+      "manufacturer": "BIMAX",
+      "brand": "BIMAX",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "88.33 ₸",
+      "typeOfCare": [
+         "body care"
+      ]
+   },
+   {
+      "image": "/images/biomio.png",
+      "name": "BIO-SOAP Экологичное туалетное мыло. Литсея и бергамот",
+      "type": "weight",
+      "size": "90 г",
+      "barcode": 4604049097559,
+      "manufacturer": "BIOMIO",
+      "brand": "BIOMIO",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+      "price": "18.15 ₸",
+      "typeOfCare": [
+         "body care",
+         "hand care"
+      ]
+   }
+]

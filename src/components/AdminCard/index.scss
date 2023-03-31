@@ -1,0 +1,82 @@
+$white:#FFFFFF;
+$gray:#3F4E65;
+$black:#111111;
+$orange:#FFC85E;
+
+.adminCard {
+    width: 100%;
+    height: auto;
+    background: $white;
+    border: 1px solid #c2c2c2;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    margin: 15px 0;
+
+    &__vector {
+        opacity: .3;
+        margin-bottom: -2px;
+
+    }
+
+    &__subText {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 150%;
+        color: $gray;
+        margin: 0;
+        
+
+    }
+
+    &__upText {
+        font-weight: 500;
+        margin-left: 5px;
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 5px;
+
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 19px;
+        gap: 5px;
+
+        text-decoration: none;
+        color: $white;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.15em;
+        border: none;
+        background-color: rgb(170, 210, 170);
+        border-radius: 80px;
+        width: 153px;
+        height: 45px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    &__image {
+        max-width: 200px;
+        display: block;
+    }
+
+    &__body {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+   
+    
+}
+

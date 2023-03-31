@@ -1,0 +1,34 @@
+$gray:#3F4E65;
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+
+    &__link {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 120%;
+        color: $gray;
+        text-decoration: none;
+
+        &::after {
+            content: '|';
+            display: inline-block;
+            opacity: 0.3;
+            color: $gray;
+            height: 20px;
+            cursor: default;
+            padding: 0 10px;
+
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        &:last-child {
+            opacity: .5;
+        }
+    }
+}

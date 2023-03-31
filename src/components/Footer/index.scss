@@ -1,0 +1,237 @@
+$white:#ffffff;
+$lite-gray:#5C6370;
+$orange:#FFC85E;
+$background:#3F4E65;
+
+.footer {
+    height: 500px;
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        height: 100%;
+        box-sizing: border-box;
+        //background-color: $background;
+        margin: 71px 280px;
+        color: $white;
+    }
+
+
+    &__mail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+
+    }
+
+    &__logo {
+        height: 66px;
+        width: 156px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        width: 320px;
+        margin: 0;
+        margin-bottom: 45px;
+        margin-right: 59px;
+    }
+
+    &__signature {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0;
+        margin-bottom: 14px;
+    }
+
+    &__subscribe {
+        position: relative;
+    }
+
+    &__input {
+        height: 59px;
+        border-radius: 36px;
+        color: $lite-gray;
+        background-color: $white;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        padding: 13px 10px 13px 20px;
+        border: none;
+        width: 282px;
+        box-sizing: border-box;
+    }
+
+    &__subscribeBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 39px;
+        height: 39px;
+        cursor: pointer;
+    }
+
+    &__title {
+        display: block;
+        white-space: nowrap;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        margin-right: 95px;
+        padding: 0;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__item {
+        text-decoration: none;
+        color: $white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    &__download {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        background-color: $orange;
+        border-radius: 79px;
+        width: 214px;
+        height: 59px;
+        box-sizing: border-box;
+        padding: 21px 49px;
+        margin-bottom: 20px;
+        margin-right: 95px;
+
+        img {
+            margin-left: 14.83px;
+            width: 17px;
+            height: 17px;
+            margin-bottom: -4px;
+        }
+    }
+
+    &__social {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    &__whatsapp,
+    &__telegram {
+        width: 39px;
+        height: 39px;
+    }
+
+    &__whatsapp {
+        margin-right: 10px;
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        p {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 5px;
+        }
+
+        .up__call {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 150%;
+
+        }
+
+        .sub__call {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 150%;
+            color: $white;
+            text-decoration: none;
+            text-decoration: underline;
+            margin-bottom: 25px;
+        }
+    }
+
+
+    &__box {
+        margin-bottom: 25px;
+
+        .up__adress,
+        .sub__adress {
+            margin: 0;
+            padding: 0;
+        }
+
+        .up__adress {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18.2px;
+        }
+
+        .sub__adress {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15.6px;
+        }
+
+    }
+
+    &__visa,
+    &__master {
+        width: 60.94px;
+        height: 39px;
+    }
+
+    &__visa {
+        margin-right: 5px;
+    }
+
+
+    @media (min-width:1360px) and (max-width: 1919px) {
+        &__container {
+            margin: 71px auto;
+        }
+    }
+}

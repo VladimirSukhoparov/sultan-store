@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const NODE_ENV = process.env.NODE_ENV;
 
@@ -12,7 +13,8 @@ module.exports = {
     entry: './src/index.jsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[hash].js',
+        filename: 'bundle.js',
+        clean: true,
         publicPath: '/'
     },
     devServer: {
@@ -26,13 +28,16 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html'
         }),
+        new MiniCssExtractPlugin({
+            filename: './styles/main.css'
+        }),
         new CleanWebpackPlugin()
 
     ],
     module: {
         rules: [{
                 test: /\.(css|scss)$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(ico|jpg|jpeg|png|svg)$/,
@@ -50,6 +55,4 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'], 
     },
-    stats:{
-        errorDetails: true},
 }

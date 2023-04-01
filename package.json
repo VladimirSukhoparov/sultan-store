@@ -6,6 +6,7 @@
   "main": "index.jsx",
   "scripts": {
     "build": "env NODE_ENV=development webpack --config webpack.config.js",
+    "builds": "webpack",
     "prod": "env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "env NODE_ENV=development webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,7 @@
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
     "sass-loader": "^13.2.1",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",

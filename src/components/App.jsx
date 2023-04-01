@@ -36,12 +36,12 @@ export const App = () => {
         <div className='content'>
           <Breadcrumb />
             <Routes className='container'>
-              <Route path='/' exact element={<Home/>} />
-              <Route path='/catalog' exact element={<Catalog />} />
-              <Route path='/catalog/cosmetics' exact element={<Cosmetics data={products} setBasket={setBasket} manufacturer={manufacturer} />} />
-              <Route path='/catalog/cosmetics/:itemID' exact element={<Product setBasket={setBasket} />} />
-              <Route path='/basket' exact element={<Basket basket={basket} setBasket={setBasket}/>}/>
-              <Route path='/admin' exact element={<Admin />} />
+              <Route path='/' element={<Home/>} />
+              <Route path='/catalog'  element={<Catalog />} />
+              <Route path='/catalog/cosmetics' element={<Cosmetics data={products} setBasket={setBasket} manufacturer={manufacturer} />} />
+              <Route path='/catalog/cosmetics/:itemID' element={<Product setBasket={setBasket} />} />
+              <Route path='/basket' element={<Basket basket={basket} setBasket={setBasket}/>}/>
+              <Route path='/admin' element={<Admin />} />
             </Routes>
         </div>
       <Footer/>

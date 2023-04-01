@@ -1,6 +1,6 @@
 {
   "name": "sultan-store",
-  "homepage": "http://localhost:3000/",
+  "homepage": "VladimirSukhoparov.github.io/sultan-store/",
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
@@ -9,7 +9,9 @@
     "builds": "webpack",
     "prod": "env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "env NODE_ENV=development webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,7 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

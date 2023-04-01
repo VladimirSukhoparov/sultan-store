@@ -40,10 +40,12 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(ico|jpg|jpeg|png|svg)$/,
-              use: ['file-loader'],
-              
-               
+                test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
+                type: 'asset/inline'
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader'
             },
             {
                 test: /\.[tj]sx?$/,

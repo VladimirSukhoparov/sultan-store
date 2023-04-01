@@ -6,11 +6,11 @@ import './index.scss'
 
 
 const routes = [
-  { path: "/sultan-store/", breadcrumb: "Главная" },
-  { path: "/sultan-store/catalog", breadcrumb: "Каталог" },
-  { path: "/sultan-store/catalog/cosmetics", breadcrumb: "Косметика и гигиена" },
-  { path: "/sultan-store/basket", breadcrumb: "Корзина" },
-  { path: "/sultan-store/admin", breadcrumb: "Администрирование" },
+  { path: "/", breadcrumb: "Главная" },
+  { path: "catalog", breadcrumb: "Каталог" },
+  { path: "catalog/cosmetics", breadcrumb: "Косметика и гигиена" },
+  { path: "basket", breadcrumb: "Корзина" },
+  { path: "admin", breadcrumb: "Администрирование" },
 
 ];
 

@@ -1,5 +1,5 @@
 import React, {  useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { NavLink, useLocation, useParams } from 'react-router-dom'
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 import './index.scss'
@@ -33,7 +33,8 @@ export const Product = ({ setBasket, setItem }) => {
 
   return (
     <div className='product'>
-      <div className='product__container'>
+      <NavLink to="/catalog/cosmetics" className='product__back' ><img src={require('../images/leftArrow.png').default} alt="catalog" />Назад</NavLink>
+              <div className='product__container'>
         <div className='product__image'>
           <img src={require(`/src/components${state.image}`).default} alt="image" className='card__img' />
         </div>

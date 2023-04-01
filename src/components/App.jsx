@@ -33,9 +33,9 @@ export const App = () => {
   return (
     <div className='app'>
       <Header basket={basket} products={products} data={data} setProducts={setProducts}/>
-        <div className='container'>
+        <div className='content'>
           <Breadcrumb />
-            <Routes>
+            <Routes className='container'>
               <Route path='/' element={<Home/>} />
               <Route path='/catalog' element={<Catalog />} />
               <Route path='/catalog/cosmetics' element={<Cosmetics data={products} setBasket={setBasket} manufacturer={manufacturer} />} />

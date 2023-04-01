@@ -279,7 +279,10 @@ export const Cosmetics = ({ data, setBasket, manufacturer }) => {
             }
 
           </div>
-          <ReactPaginate breakLabel="..."
+          
+        </div>
+      </div>
+      <ReactPaginate breakLabel="..."
             nextLabel=">"
             onPageChange={handlePageClick}
             pageRangeDisplayed={5}
@@ -288,8 +291,6 @@ export const Cosmetics = ({ data, setBasket, manufacturer }) => {
             renderOnZeroPageCount={null}
             className='cosmetics__pagination'
           />
-        </div>
-      </div>
     </div>
   )
 }

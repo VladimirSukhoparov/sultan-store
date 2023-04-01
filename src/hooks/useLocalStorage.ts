@@ -40,9 +40,9 @@ export const useLocalStorage = () => {
     localStorage.removeItem(key);
   }
 
-  const clear = ()=>{
+  const clearLS = ()=>{
     localStorage.clear();
   }
 
-  return { readLS, writeLS, removeLS, removeOne,removeAll, clear };
+  return { readLS, writeLS, removeLS, removeOne,removeAll, clearLS };
 };

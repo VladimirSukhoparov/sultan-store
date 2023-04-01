@@ -28,7 +28,7 @@ export const Basket = ({ basket, setBasket }) => {
             thanks.current.style.display = 'block'
             setTimeout(() => {
                 thanks.current.style.display = 'none'
-                setTimeout(() => { basketNull.current.style.display = 'block' }, 1000)
+                setTimeout(() => { basketNull.current.style.display = 'block' }, )
             }, 2000);
         });
 

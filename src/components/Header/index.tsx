@@ -29,7 +29,7 @@ if(!readLS('data')){
     <div className='header'>
       <div className="header__container">
         <div className="header__link">
-          <div className="header__adress">
+          
             <div className='header__box'>
               <img src={require("../images/geo.png").default} alt="geo" className="header__geo" />
               <div>
@@ -44,8 +44,8 @@ if(!readLS('data')){
                 <p className="sub__adress">На связи в любое время</p>
               </div>
             </div>
-          </div>
-          <div className="header__nav">
+         
+        
             <ul className='header__list'>
               <li className='header__item'><a >О компании</a></li>
               <li className='header__item'><a >Доставка и оплата</a></li>
@@ -53,10 +53,10 @@ if(!readLS('data')){
               <li className='header__item'><a >Контакты</a></li>
             </ul>
           </div>
-        </div>
-        <hr className='one__line' />
+       
+        <hr id='one__line' />
         <div className="header__contact">
-          <div className="header__content">
+          {/* <div className="header__content"> */}
             <NavLink to="/"><img src={require('../images/logo.png').default} alt="logo" className='header__logo' /></NavLink>
             <NavLink to="catalog" className='header__catalog' onClick={localWrite}>Каталог<img src={require('../images/catalog.png').default} alt="catalog" /></NavLink>
             <div className='header__search'>
@@ -64,8 +64,8 @@ if(!readLS('data')){
               <button className='header__searchBtn'><img src={require('../images/search.png').default} alt="search" /></button>
             </div>
 
-          </div>
-          <div className="header__content">
+         {/*  </div>
+          <div className="header__content"> */}
             <div className='header__tel'>
               <div className='header__call'>
                 <p className='up__call'>+7 (777) 490-00-91</p>
@@ -83,9 +83,9 @@ if(!readLS('data')){
                 <p className='basket__price'>{Math.floor(basket.reduce((acc, cur) => acc + parseFloat(cur.price), 0) * 100) / 100} ₸</p>
               </div>
             </NavLink>
-          </div>
+          {/* </div> */}
         </div>
-        <hr className='two__line' />
+        <hr id='two__line' />
       </div>
     </div>
   )

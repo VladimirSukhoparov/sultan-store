@@ -21,7 +21,7 @@ const customStyles = {
 
 
 export const Admin = () => {
-    const { writeLS, removeAll, clear } = useLocalStorage()
+    const { writeLS, removeAll, clearLS } = useLocalStorage()
     const [[data]] = useState(JSON.parse(localStorage.getItem('data')) || []);
 
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -55,6 +55,7 @@ export const Admin = () => {
         closeModal();
     };
 
+
     const updateLocalStorage = () => {
         removeAll('data');
         writeLS('data', datas);
@@ -74,7 +75,7 @@ export const Admin = () => {
             <div className='admin__box'>
                 <a className='admin__btn blue' onClick={updateLocalStorage}>Сохранить изменения</a>
                 <a className='admin__btn green' onClick={() => { setDatas(data) }}>Отменить изменения</a>
-                <a className='admin__btn red' onClick={clear}>Удалить все</a>
+                <a className='admin__btn red' onClick={() => { clearLS(); setDatas([]) }}>Удалить все</a>
             </div>
             {(datas || data) &&
                 <div className='admin__container'>

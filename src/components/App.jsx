@@ -36,7 +36,7 @@ export const App = () => {
         <div className='content'>
           <Breadcrumb />
             <Routes className='container'>
-              <Route path='/' exact element={<Home/>} />
+              <Route path='/' element={<Home/>} />
               <Route path='/catalog'  element={<Catalog />} />
               <Route path='/catalog/cosmetics' element={<Cosmetics data={products} setBasket={setBasket} manufacturer={manufacturer} />} />
               <Route path='/catalog/cosmetics/:itemID' element={<Product setBasket={setBasket} />} />

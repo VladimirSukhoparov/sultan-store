@@ -5,7 +5,7 @@ import Modal from "react-modal";
 
 import "./index.scss";
 
-Modal.setAppElement("#root");
+Modal.setAppElement("body");
 
 const customStyles = {
   content: {
@@ -36,7 +36,7 @@ export const Admin = () => {
   function dataUpdate() {
     const arr = datas.filter((elem) => {
       if (elem.barcode === item.barcode) {
-        JSON.stringify(elem) === JSON.stringify(item);
+        return JSON.stringify(elem) === JSON.stringify(item);
       } else {
         return true;
       }
@@ -66,18 +66,18 @@ export const Admin = () => {
   return (
     <div className="admin">
       <div className="admin__box">
-        <a className="admin__btn blue" onClick={updateLocalStorage}>
+        <button className="admin__btn blue" onClick={updateLocalStorage}>
           Сохранить изменения
-        </a>
-        <a
+        </button>
+        <button
           className="admin__btn green"
           onClick={() => {
             setDatas(data);
           }}
         >
           Отменить изменения
-        </a>
-        <a
+        </button>
+        <button
           className="admin__btn red"
           onClick={() => {
             clearLS();
@@ -85,7 +85,7 @@ export const Admin = () => {
           }}
         >
           Удалить все
-        </a>
+        </button>
       </div>
       {(datas || data) && (
         <div className="admin__container">

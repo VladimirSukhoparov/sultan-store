@@ -19,7 +19,7 @@ type cosmeticsProps = {
     typeOfCare: string[];
   }[];
   setBasket: (basket) => void;
-  manufacturer: { manufacturer: string; count: number }[];
+  manufacturer:any[];
 };
 export const Cosmetics: FC<cosmeticsProps> = ({
   data,
@@ -75,7 +75,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
     typeCare.length > 0
       ? setDatas(data.filter((item) => item.typeOfCare.includes(typeCare)))
       : setDatas(data);
-  }, [typeCare]);
+  }, [data, typeCare]);
 
   function updateFilters(checked, manufacturerFilter) {
     if (checked)
@@ -94,7 +94,8 @@ export const Cosmetics: FC<cosmeticsProps> = ({
       : setDatas(
           datas.filter((item) => manufacturerFilter.has(item.manufacturer))
         );
-  }, [manufacturerFilter]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ manufacturerFilter]);
 
   /* useEffect(()=>{
     setManufacturerList(manufacturer.filter((item) => item.manufacturer.toLowerCase().includes(searchText.toLowerCase())));
@@ -108,6 +109,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
           parseFloat(item.price) <= maxPrice
       )
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [minPrice, maxPrice]);
 
   function filterManufactureList() {
@@ -148,25 +150,29 @@ export const Cosmetics: FC<cosmeticsProps> = ({
 
       const sortProperty = types[type];
 
-      const sorted = [...datas].sort((a, b) => {
-        if (sortProperty == "name") {
+      const sorted = [...datas].sort((a, b)  => {
+        if (sortProperty === "name") {
           return a[sortProperty].toUpperCase() > b[sortProperty].toUpperCase()
             ? 1
             : -1;
-        } else if (sortProperty == "nameDown") {
+        } else if (sortProperty === "nameDown") {
           return b["name"].toUpperCase() > a["name"].toUpperCase() ? 1 : -1;
-        } else if (sortProperty == "price") {
+        } else if (sortProperty === "price") {
           return parseFloat(a[sortProperty]) - parseFloat(b[sortProperty]);
-        } else if (sortProperty == "priceDown") {
+        } else if (sortProperty === "priceDown") {
           return parseFloat(b["price"]) - parseFloat(a["price"]);
+        }else{
+          return null
         }
-      });
+
+    });
 
       setDatas(sorted);
     };
 
     sortArray(sortType);
-  }, [sortType]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ sortType]);
 
   return (
     <div className="cosmetics">
@@ -190,7 +196,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
       <div className="cosmetics__type">
         <ul className="cosmetics__list">
           <li className="cosmetics__item">
-            <a
+            <button
               onClick={() => {
                 sortOfType("body care");
               }}
@@ -198,10 +204,10 @@ export const Cosmetics: FC<cosmeticsProps> = ({
               Уход
               <br />
               за телом
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a
+            <button
               onClick={() => {
                 sortOfType("hand care");
               }}
@@ -209,54 +215,54 @@ export const Cosmetics: FC<cosmeticsProps> = ({
               Уход
               <br />
               за руками
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">
+            <button>
               Уход
               <br />
               за ногами
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">
+            <button>
               Уход
               <br />
               за лицом
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">
+            <button>
               Уход
               <br />
               за волосами
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">
+            <button>
               Средства
               <br />
               для загара
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">
+            <button>
               Средства
               <br />
               для бритья
-            </a>
+            </button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">Подарочные наборы</a>
+            <button>Подарочные наборы</button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">Гигиеническая продукция</a>
+            <button>Гигиеническая продукция</button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">Гигиена полости рта</a>
+            <button>Гигиена полости рта</button>
           </li>
           <li className="cosmetics__item">
-            <a href="#">Бумажная продукция</a>
+            <button>Бумажная продукция</button>
           </li>
         </ul>
       </div>
@@ -335,6 +341,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
               ))}
             </ul>
             {!showAll ? (
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
               <a
                 onClick={() => {
                   showAllFilter();
@@ -345,6 +352,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 <img src={require("../images/all.png").default} alt="all" />
               </a>
             ) : (
+              // eslint-disable-next-line jsx-a11y/anchor-is-valid
               <a
                 onClick={() => {
                   hideAllFilter();

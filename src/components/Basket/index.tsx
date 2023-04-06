@@ -68,7 +68,7 @@ export const Basket: FC<basketProps> = ({ basket, setBasket }) => {
               />
             ))}
             <div className="basket__purchase">
-              <a
+              <button
                 className="basket__buy"
                 id="btnBuy"
                 onClick={() => {
@@ -76,7 +76,7 @@ export const Basket: FC<basketProps> = ({ basket, setBasket }) => {
                 }}
               >
                 Оформить заказ
-              </a>
+              </button>
               <span className="basket__fullPrice">
                 {Math.floor(
                   basket.reduce((acc, cur) => acc + parseFloat(cur.price), 0) *

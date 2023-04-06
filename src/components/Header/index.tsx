@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState, useEffect, FC } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
@@ -62,6 +63,7 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
           )
         )
       : setProducts(data);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchText]);
 
   return (

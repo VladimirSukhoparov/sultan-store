@@ -1,19 +1,19 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import data from "./data.json";
 
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import { Breadcrumb } from "./Breadcrumb";
-import { Home } from "./Home";
-import { Product } from "./Product";
-import { Catalog } from "./Catalog";
-import { Cosmetics } from "./Cosmetics";
-import { Basket } from "./Basket";
-import { Admin } from "./Admin";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Breadcrumb } from "./components/Breadcrumb";
+import { Home } from "./components/Home";
+import { Product } from "./components/Product";
+import { Catalog } from "./components/Catalog";
+import { Cosmetics } from "./components/Cosmetics";
+import { Basket } from "./components/Basket";
+import { Admin } from "./components/Admin";
 
-import "./index.scss";
+import "./App.scss";
 
 export const App = () => {
   const [basket, setBasket] = useState(
@@ -40,7 +40,7 @@ export const App = () => {
       />
       <div className="content">
         <Breadcrumb />
-        <Routes className="container">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="catalog" element={<Catalog />} />
           <Route

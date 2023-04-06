@@ -455,5 +455,11 @@ $black:#111111;
             justify-content: space-between;
             flex-wrap: wrap;
         }
+        &__input{
+            width: 150px;
+        }
+        &__searchBtn{
+                left: 100px;
+        }
     }
 }

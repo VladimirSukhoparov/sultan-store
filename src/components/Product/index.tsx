@@ -50,7 +50,10 @@ export const Product: FC<productProps> = ({ setBasket }) => {
       <div className="product__container">
         <div className="product__image">
           <img
-            src={"test"? `../../images${state.image}` :require(`/src/images/${state.image}`)}
+            src={
+              //`../../images${state.image}`
+                require(`/src/images/${state.image}`)
+            }
             alt="image"
             className="card__img"
           />

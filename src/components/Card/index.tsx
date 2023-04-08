@@ -37,7 +37,11 @@ export const Card: FC<cardProps> = ({ itemProd, setBasket }) => {
   return (
     <div className="card" data-testid="card">
       <img
-        src={"test"? `../../images${product.image}` :require(`/src/images/${product.image}`)}
+        src={
+          
+            // `../../images${product.image}`
+             require(`/src/images/${product.image}`)
+        }
         alt="image"
         className="card__image"
       />

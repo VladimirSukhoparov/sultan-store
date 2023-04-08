@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
-  "resolutions": {
-    "react-error-overlay": "6.0.9"
-},
   "scripts": {
     "builds": "env NODE_ENV=development webpack --config webpack.config.js",
     "build": "webpack",

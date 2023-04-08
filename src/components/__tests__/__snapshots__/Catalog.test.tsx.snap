@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="catalog"
+  data-testid="catalog"
+>
+  <a
+    className="catalog__link"
+    href="/cosmetics"
+    onClick={[Function]}
+  >
+    <figure
+      data-testid="fugure"
+    >
+      <img
+        alt="cosmetics"
+        src="cosmetics.png"
+      />
+      <figcaption
+        className="catalog__title"
+      >
+        Косметика и гигиена
+      </figcaption>
+    </figure>
+  </a>
+</div>
+`;

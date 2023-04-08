@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
-$inter:'Inter',
-sans-serif;
+$inter: "Inter", sans-serif;
 
-$background:#fff;
-$text:#111111;
+$background: #fff;
+$text: #111111;
 
-body{
-    font-family: $inter;
-    color: $text;
-    background-color: $background;
-    margin: 0 auto;
-    box-sizing: border-box;
+body {
+  font-family: $inter;
+  color: $text;
+  background-color: $background;
+  margin: 0 auto;
+  box-sizing: border-box;
 }

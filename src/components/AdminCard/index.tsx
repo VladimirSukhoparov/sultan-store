@@ -15,10 +15,14 @@ type adminCardProps = {
     price: string;
     typeOfCare: string[];
   };
-  setIsOpen:(modalIsOpen)=>void;
-  setItem:(itemProd)=>void
+  setIsOpen: (modalIsOpen) => void;
+  setItem: (itemProd) => void;
 };
-export const AdminCard:FC<adminCardProps> = ({ itemProd, setIsOpen, setItem }) => {
+export const AdminCard: FC<adminCardProps> = ({
+  itemProd,
+  setIsOpen,
+  setItem,
+}) => {
   const openEdit = () => {
     setIsOpen(true);
     setItem(itemProd);
@@ -26,7 +30,7 @@ export const AdminCard:FC<adminCardProps> = ({ itemProd, setIsOpen, setItem }) =
   return (
     <div className="adminCard">
       <img
-        src={require(`/src/components${itemProd.image}`).default}
+        src={require(`/src/components${itemProd.image}`)}
         alt="image"
         className="adminCard__image"
       />

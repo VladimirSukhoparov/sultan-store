@@ -53,7 +53,7 @@ export const Basket: FC<basketProps> = ({ basket, setBasket }) => {
   }
 
   return (
-    <div className="basket" id="basket">
+    <div className="basket" id="basket" data-testid="basket">
       <h1 className="basket__title">Корзина</h1>
       <hr className="basket__line" />
       <div className="basket__container">

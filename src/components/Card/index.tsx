@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 import { FC } from "react";
 
 import { useLocalStorage } from "../../hooks/useLocalStorage";
+import vector1 from "../../images/vector1.png";
+import vector2 from "../../images/vector2.png";
+import basket2 from "../../images/basket2.png";
 
 import "./index.scss";
 
@@ -32,26 +35,18 @@ export const Card: FC<cardProps> = ({ itemProd, setBasket }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card" data-testid="card">
       <img
-        src={require(`/src/components${product.image}`).default}
+        src={"test"? `../../images${product.image}` :require(`/src/images/${product.image}`)}
         alt="image"
         className="card__image"
       />
       <div className="card__body">
         <div>
           {product.type === "volume" ? (
-            <img
-              src={require("../images/vector1.png").default}
-              alt=""
-              className="card__vector"
-            />
+            <img src={vector1} alt="" className="card__vector" />
           ) : (
-            <img
-              src={require("../images/vector2.png").default}
-              alt=""
-              className="card__vector"
-            />
+            <img src={vector2} alt="" className="card__vector" />
           )}
           <span className="card__size">{product.size}</span>
           <NavLink
@@ -86,10 +81,7 @@ export const Card: FC<cardProps> = ({ itemProd, setBasket }) => {
             className="card__btn"
           >
             В корзину
-            <img
-              src={require("../images/basket2.png").default}
-              alt="inBasket"
-            />
+            <img src={basket2} alt="inBasket" />
           </a>
         </div>
       </div>

@@ -2,13 +2,22 @@ import React, { useState, FC } from "react";
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
+import close from "../../images/close.png";
+import all from "../../images/all.png";
+import download from "../../images/download2.png";
+import share from "../../images/share.png";
+import basket from "../../images/basket2.png";
+import vector2 from "../../images/vector2.png";
+import vector1 from "../../images/vector1.png";
+import leftArrow from "../../images/leftArrow.png";
+
 import "./index.scss";
 
 type productProps = {
   setBasket: (basket) => void;
 };
 
-export const Product:FC<productProps> = ({ setBasket }) => {
+export const Product: FC<productProps> = ({ setBasket }) => {
   const { itemID } = useParams();
   const location = useLocation();
   const { state } = location;
@@ -33,15 +42,15 @@ export const Product:FC<productProps> = ({ setBasket }) => {
   }
 
   return (
-    <div className="product">
+    <div className="product" data-testid="product">
       <NavLink to="/catalog/cosmetics" className="product__back">
-        <img src={require("../images/leftArrow.png").default} alt="catalog" />
+        <img src={leftArrow} alt="catalog" />
         Назад
       </NavLink>
       <div className="product__container">
         <div className="product__image">
           <img
-            src={require(`/src/components${state.image}`).default}
+            src={"test"? `../../images${state.image}` :require(`/src/images/${state.image}`)}
             alt="image"
             className="card__img"
           />
@@ -54,20 +63,12 @@ export const Product:FC<productProps> = ({ setBasket }) => {
           </p>
           {state.type === "volume" ? (
             <span className="product__size">
-              <img
-                src={require("../images/vector1.png").default}
-                alt=""
-                className="product__vector"
-              />
+              <img src={vector1} alt="" className="product__vector" />
               {state.size}
             </span>
           ) : (
             <span className="product__size">
-              <img
-                src={require("../images/vector2.png").default}
-                alt=""
-                className="product__vector"
-              />
+              <img src={vector2} alt="" className="product__vector" />
               {state.size}
             </span>
           )}
@@ -97,16 +98,13 @@ export const Product:FC<productProps> = ({ setBasket }) => {
               }}
             >
               В корзину
-              <img
-                src={require("../images/basket2.png").default}
-                alt="inBasket"
-              />
+              <img src={basket} alt="inBasket" />
             </a>
           </div>
 
           <div className="product__box2">
             <a className="product__share">
-              <img src={require("../images/share.png").default} alt="share" />
+              <img src={share} alt="share" />
             </a>
             <p className="product__text">
               При покупке от&nbsp;<span>10 000 ₸</span>&nbsp;бесплатная
@@ -115,10 +113,7 @@ export const Product:FC<productProps> = ({ setBasket }) => {
             </p>
             <a className="product__priceList" download>
               Прайс-лист
-              <img
-                src={require("../images/download2.png").default}
-                alt="download"
-              />
+              <img src={download} alt="download" />
             </a>
           </div>
           <div>
@@ -147,14 +142,7 @@ export const Product:FC<productProps> = ({ setBasket }) => {
               className="product__btn"
             >
               Описание
-              <img
-                src={
-                  showDescription
-                    ? require("../images/close.png").default
-                    : require("../images/all.png").default
-                }
-                alt="all"
-              />
+              <img src={showDescription ? close : all} alt="all" />
             </a>
             {showDescription && (
               <p className="product__descriptionText">{state.description}</p>
@@ -168,14 +156,7 @@ export const Product:FC<productProps> = ({ setBasket }) => {
               className="product__btn"
             >
               Характеристики
-              <img
-                src={
-                  showProperty
-                    ? require("../images/close.png").default
-                    : require("../images/all.png").default
-                }
-                alt="all"
-              />
+              <img src={showProperty ? close : all} alt="all" />
             </a>
             {showProperty && (
               <div>

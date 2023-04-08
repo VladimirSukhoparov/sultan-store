@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="basket"
+  data-testid="basket"
+  id="basket"
+>
+  <h1
+    className="basket__title"
+  >
+    Корзина
+  </h1>
+  <hr
+    className="basket__line"
+  />
+  <div
+    className="basket__container"
+  >
+    <h2
+      className="basket__title2"
+      id="basketNull"
+    >
+      Ваша корзина пуста 😔
+    </h2>
+    <h2
+      className="basket__title2"
+      id="thanks"
+    >
+      Спасибо за заказ 😊
+    </h2>
+  </div>
+</div>
+`;

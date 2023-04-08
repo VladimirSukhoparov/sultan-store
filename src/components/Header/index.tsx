@@ -3,6 +3,15 @@ import React, { useState, useEffect, FC } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
+import mail from "../../images/mail.png";
+import geo from "../../images/geo.png";
+import search from "../../images/search.png";
+import logo from "../../images/logo.png";
+import catalog from "../../images/catalog.png";
+import caller from "../../images/call.png";
+import download from "../../images/download.png";
+import basketImg from "../../images/basket.png";
+
 import "./index.scss";
 
 type headerProps = {
@@ -45,7 +54,12 @@ type headerProps = {
   setProducts: (product) => void;
 };
 
-export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) => {
+export const Header: FC<headerProps> = ({
+  basket,
+  products,
+  data,
+  setProducts,
+}) => {
   const [searchText, setSearchText] = useState("");
   const { readLS, writeLS } = useLocalStorage();
 
@@ -63,30 +77,22 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
           )
         )
       : setProducts(data);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchText]);
 
   return (
-    <div className="header">
+    <div className="header" data-testid="header">
       <div className="header__container">
         <div className="header__link">
           <div className="header__box">
-            <img
-              src={require("../images/geo.png").default}
-              alt="geo"
-              className="header__geo"
-            />
+            <img src={geo} alt="geo" className="header__geo" />
             <div>
               <p className="up__adress">г. Кокчетав, ул. Ж. Ташенова 129Б</p>
               <p className="sub__adress">(Рынок Восточный)</p>
             </div>
           </div>
           <div className="header__box">
-            <img
-              src={require("../images/mail.png").default}
-              alt="geo"
-              className="header__mail"
-            />
+            <img src={mail} alt="geo" className="header__mail" />
             <div>
               <p className="up__adress">opt.sultan@mail.ru</p>
               <p className="sub__adress">На связи в любое время</p>
@@ -113,11 +119,7 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
         <div className="header__contact">
           {/* <div className="header__content"> */}
           <NavLink to="/">
-            <img
-              src={require("../images/logo.png").default}
-              alt="logo"
-              className="header__logo"
-            />
+            <img src={logo} alt="logo" className="header__logo" />
           </NavLink>
           <NavLink
             to="catalog"
@@ -125,7 +127,7 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
             onClick={localWrite}
           >
             Каталог
-            <img src={require("../images/catalog.png").default} alt="catalog" />
+            <img src={catalog} alt="catalog" />
           </NavLink>
           <div className="header__search">
             <input
@@ -135,7 +137,7 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
               onChange={(event) => setSearchText(event.target.value)}
             />
             <button className="header__searchBtn">
-              <img src={require("../images/search.png").default} alt="search" />
+              <img src={search} alt="search" />
             </button>
           </div>
 
@@ -147,25 +149,14 @@ export const Header:FC<headerProps> = ({ basket, products, data, setProducts }) 
               <p className="sub__call">время работы: 9:00-20:00</p>
               <a>Заказать звонок</a>
             </div>
-            <img
-              src={require("../images/call.png").default}
-              alt="caller"
-              className="header__caller"
-            />
+            <img src={caller} alt="caller" className="header__caller" />
           </div>
           <a className="header__price">
             Прайс-лист
-            <img
-              src={require("../images/download.png").default}
-              alt="download"
-            />
+            <img src={download} alt="download" />
           </a>
           <NavLink to="basket" className="header__basket">
-            <img
-              src={require("../images/basket.png").default}
-              alt="basket"
-              className="basket__img"
-            />
+            <img src={basketImg} alt="basket" className="basket__img" />
             <p className="basket__num">{basket.length}</p>
             <div className="basket__box">
               <p className="basket__name">Корзина</p>

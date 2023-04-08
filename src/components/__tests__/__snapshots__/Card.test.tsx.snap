@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="card"
+  data-testid="card"
+>
+  <img
+    alt="image"
+    className="card__image"
+    src="../../images/images/aos.png"
+  />
+  <div
+    className="card__body"
+  >
+    <div>
+      <img
+        alt=""
+        className="card__vector"
+        src="vector1.png"
+      />
+      <span
+        className="card__size"
+      >
+        450 мл
+      </span>
+      <a
+        className="card__brand"
+        href="/4604049097540"
+        onClick={[Function]}
+      >
+        AOS
+        <span
+          className="card__name"
+        >
+          Гель для душа
+        </span>
+      </a>
+    </div>
+    <div>
+      <p
+        className="card__subText"
+      >
+        <span>
+          Штрихкод:
+        </span>
+        <span
+          className="card__upText"
+        >
+          4604049097540
+        </span>
+      </p>
+      <p
+        className="card__subText"
+      >
+        <span>
+          Производитель:
+        </span>
+        <span
+          className="card__upText"
+        >
+          AOS
+        </span>
+      </p>
+      <p
+        className="card__subText"
+      >
+        <span>
+          Брэнд:
+        </span>
+        <span
+          className="card__upText"
+        >
+          AOS
+        </span>
+      </p>
+    </div>
+    <div
+      className="card__priceBtn"
+    >
+      <p
+        className="card__price"
+      >
+        38.76 ₸
+      </p>
+      <a
+        className="card__btn"
+        onClick={[Function]}
+      >
+        В корзину
+        <img
+          alt="inBasket"
+          src="basket2.png"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -20,7 +20,6 @@ export const useLocalStorage = () => {
   };
 
   function filtered(arr, key) {
-    
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].barcode === key) {
         arr.splice(i, 1);
@@ -36,13 +35,13 @@ export const useLocalStorage = () => {
     localStorage.setItem(key, JSON.stringify(filteredStorage));
   };
 
-  const removeAll = (key)=>{
+  const removeAll = (key) => {
     localStorage.removeItem(key);
-  }
+  };
 
-  const clearLS = ()=>{
+  const clearLS = () => {
     localStorage.clear();
-  }
+  };
 
-  return { readLS, writeLS, removeLS, removeOne,removeAll, clearLS };
+  return { readLS, writeLS, removeLS, removeOne, removeAll, clearLS };
 };

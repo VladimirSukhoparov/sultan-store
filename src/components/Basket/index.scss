@@ -1,89 +1,84 @@
-$black:#111111;
-$gray:#3F4E65;
-$orange:#FFC85E;
-$white:#ffffff;
+$black: #111111;
+$gray: #3f4e65;
+$orange: #ffc85e;
+$white: #ffffff;
 
 .basket {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $black;
+    margin: 0;
+  }
+
+  &__title2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__line {
+    display: block;
+    opacity: 0.3;
+    color: $gray;
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  &__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
-    padding-top: 50px;
-    padding-bottom: 100px;
+  }
 
-    &__title {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 120%;
-        text-transform: uppercase;
-        color: $black;
-        margin: 0;
+  &__buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 19px;
+    background: $orange;
+    border-radius: 79px;
+    width: 192px;
+    height: 59px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    cursor: pointer;
+    border: none;
+  }
 
-    }
+  &__purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    &__title2 {
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 150%;
-        font-style: normal;
-        text-align: center;
-        margin: 0;
-    }
+  &__fullPrice {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: $black;
+  }
 
-    &__line {
-        display: block;
-        opacity: 0.3;
-        color: $gray;
-        width: 100%;
-        margin: 50px 0;
-    }
+  #thanks {
+    display: none;
+  }
 
-    &__container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__buy {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 19px;
-        background: $orange;
-        border-radius: 79px;
-        width: 192px;
-        height: 59px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        color: $white;
-        cursor: pointer;
-        border: none;
-
-    }
-
-    &__purchase {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &__fullPrice {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 130%;
-        color: $black;
-
-    }
-
-    #thanks {
-        display: none;
-    }
-
-    #basketNull {
-        display: block;
-    }
-
-
+  #basketNull {
+    display: block;
+  }
 }

@@ -1,6 +1,10 @@
 import React, { useState, FC } from "react";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
+import vector1 from "../../images/vector1.png";
+import vector2 from "../../images/vector2.png";
+import remove from "../../images/remove.png";
+
 import "./index.scss";
 
 type basketItemProps = {
@@ -68,24 +72,13 @@ export const BasketItem: FC<basketItemProps> = ({
     <div className="basketItem">
       <div className="basketItem__item">
         <div className="basketItem__image">
-          <img
-            src={require(`/src/components${item.image}`).default}
-            alt="image"
-          />
+          <img src={require(`/src/components${item.image}`)} alt="image" />
         </div>
         <div className="basketItem__description">
           {item.type === "volume" ? (
-            <img
-              src={require("../images/vector1.png").default}
-              alt=""
-              className="basketItem__vector"
-            />
+            <img src={vector1} alt="" className="basketItem__vector" />
           ) : (
-            <img
-              src={require("../images/vector2.png").default}
-              alt=""
-              className="basketItem__vector"
-            />
+            <img src={vector2} alt="" className="basketItem__vector" />
           )}
           <span className="basketItem__size">{item.size}</span>
           <p className="basketItem__name">
@@ -129,10 +122,7 @@ export const BasketItem: FC<basketItemProps> = ({
               removeItem(item);
             }}
           >
-            <img
-              src={require("../images/remove.png").default}
-              alt="inbasketItem"
-            />
+            <img src={remove} alt="inbasketItem" />
           </a>
         </div>
       </div>

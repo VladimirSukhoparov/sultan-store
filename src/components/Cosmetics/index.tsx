@@ -2,6 +2,9 @@ import React, { useRef, useState, useEffect, FC } from "react";
 import ReactPaginate from "react-paginate";
 
 import { Card } from "../Card";
+import close from "../../images/close.png";
+import all from "../../images/all.png";
+import search from "../../images/search.png";
 
 import "./index.scss";
 
@@ -19,7 +22,7 @@ type cosmeticsProps = {
     typeOfCare: string[];
   }[];
   setBasket: (basket) => void;
-  manufacturer:any[];
+  manufacturer: any[];
 };
 export const Cosmetics: FC<cosmeticsProps> = ({
   data,
@@ -94,8 +97,8 @@ export const Cosmetics: FC<cosmeticsProps> = ({
       : setDatas(
           datas.filter((item) => manufacturerFilter.has(item.manufacturer))
         );
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ manufacturerFilter]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [manufacturerFilter]);
 
   /* useEffect(()=>{
     setManufacturerList(manufacturer.filter((item) => item.manufacturer.toLowerCase().includes(searchText.toLowerCase())));
@@ -109,7 +112,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
           parseFloat(item.price) <= maxPrice
       )
     );
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [minPrice, maxPrice]);
 
   function filterManufactureList() {
@@ -150,7 +153,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
 
       const sortProperty = types[type];
 
-      const sorted = [...datas].sort((a, b)  => {
+      const sorted = [...datas].sort((a, b) => {
         if (sortProperty === "name") {
           return a[sortProperty].toUpperCase() > b[sortProperty].toUpperCase()
             ? 1
@@ -161,21 +164,20 @@ export const Cosmetics: FC<cosmeticsProps> = ({
           return parseFloat(a[sortProperty]) - parseFloat(b[sortProperty]);
         } else if (sortProperty === "priceDown") {
           return parseFloat(b["price"]) - parseFloat(a["price"]);
-        }else{
-          return null
+        } else {
+          return null;
         }
-
-    });
+      });
 
       setDatas(sorted);
     };
 
     sortArray(sortType);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ sortType]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sortType]);
 
   return (
-    <div className="cosmetics">
+    <div className="cosmetics" data-testid="cosmetics">
       <div className="cosmetics__header">
         <h1 className="cosmetics__title">Косметика и гигиена</h1>
         <div className="cosmetics__sort">
@@ -310,10 +312,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 className="cosmetics__searchBtn"
                 onClick={filterManufactureList}
               >
-                <img
-                  src={require("../images/search.png").default}
-                  alt="search"
-                />
+                <img src={search} alt="search" />
               </button>
             </div>
             <ul className="cosmetics__listFilter" ref={list}>
@@ -349,7 +348,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 className="cosmetics__showAll"
               >
                 Показать все
-                <img src={require("../images/all.png").default} alt="all" />
+                <img src={all} alt="all" />
               </a>
             ) : (
               // eslint-disable-next-line jsx-a11y/anchor-is-valid
@@ -360,7 +359,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 className="cosmetics__showAll"
               >
                 Скрыть
-                <img src={require("../images/close.png").default} alt="close" />
+                <img src={close} alt="close" />
               </a>
             )}
           </div>
@@ -371,6 +370,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 <input
                   type="checkbox"
                   id="body"
+                  data-testid="body-checkbox"
                   name="body care"
                   className="cosmetics__filterTypeCare"
                   onClick={() => {
@@ -386,6 +386,7 @@ export const Cosmetics: FC<cosmeticsProps> = ({
                 <input
                   type="checkbox"
                   id="hand"
+                  data-testid="hand-checkbox"
                   name="hand care"
                   className="cosmetics__filterTypeCare"
                   onClick={() => {

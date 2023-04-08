@@ -1,34 +1,29 @@
 .catalog {
-    
-    &__link {
-        
-        text-decoration: none;
-        text-align: center;
-        display: inline-block;
+  &__link {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 
-        &:hover {
-            text-decoration: underline;
-        }
-        figure{
-            box-sizing: border-box;
-            padding: 5px;
-            margin: 20px 0;
-            img{
-                width: 250px;
-                border-radius: 20px;
-                background:#fff6e4;
-    
-            }
-        }
+    &:hover {
+      text-decoration: underline;
     }
-
-    &__title {
-        color: black;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 130%;
-        margin-top: 10px;
-        
-
+    figure {
+      box-sizing: border-box;
+      padding: 5px;
+      margin: 20px 0;
+      img {
+        width: 250px;
+        border-radius: 20px;
+        background: #fff6e4;
+      }
     }
+  }
+
+  &__title {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    margin-top: 10px;
+  }
 }

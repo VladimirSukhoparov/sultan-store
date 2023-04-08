@@ -1,17 +1,20 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import cosmetics from "../../images/cosmetics.png";
 
-import './index.scss'
+import "./index.scss";
 
 export const Catalog = () => {
-    return (
-        <div className='catalog'>
-            <NavLink to='cosmetics' className="catalog__link" >
-                <figure>
-                    <img src={require('../images/cosmetics.png').default} alt="cosmetics" />
-                    <figcaption className='catalog__title'>Косметика и гигиена</figcaption>
-                </figure>
-            </NavLink>
-        </div>
-    )
-}
+  return (
+    <div className="catalog" data-testid="catalog">
+      <NavLink to="cosmetics" className="catalog__link">
+        <figure data-testid="fugure">
+          <img src={cosmetics} alt="cosmetics" />
+          <figcaption className="catalog__title">
+            Косметика и гигиена
+          </figcaption>
+        </figure>
+      </NavLink>
+    </div>
+  );
+};
